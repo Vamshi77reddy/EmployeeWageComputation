@@ -1,7 +1,26 @@
 package com.bridgeLabz;
 
 public class WelcomeMessage {
-	public static void main(String[] args) {
-		System.out.println("Welcome to Employeewage Computation");
+	
+		public static void Attendance() {
+		int emp = 1;
+
+		int empCheck = (int) ( (Math.random() * 10 )% 2);
+
+		if (empCheck == emp) {
+
+			System.out.println("Employee is present");
+
+		} else {
+
+			System.out.println("Employee is absent");
+		}
+		
+
+		
 }
-}
+
+public static void main(String[] args) {
+	System.out.println("Welcome to Employeewage Computation");
+	Attendance();
+}}
