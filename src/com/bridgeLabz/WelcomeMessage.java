@@ -9,19 +9,22 @@ public class WelcomeMessage {
 		        int fullDayHour = 8;
 		        int dailyWage = 0;
 		        int partTimeHour = 4;
+		        int workingDays = 20;
+		        for (int day = 0; day <= workingDays; day++) {
+
 		        int employeeCheck = (int) Math.floor(Math.random() * 10) % 3;
 
 		        switch (employeeCheck) {
 		        case 1:
-		            dailyWage = fullDayHour * wagePerHour;
+		            dailyWage = day*fullDayHour * wagePerHour;
 		            System.out.println("Employee is present Full Time");
 		            break;
 		        case 2:
-		        	 dailyWage = partTimeHour * wagePerHour;
+		        	 dailyWage = day*partTimeHour * wagePerHour;
 		             System.out.println("Employee is present half time");
 		             break;
 default:		            System.out.println("Employee is absent");
 		        }
 		        System.out.println("Employee total wage is: " + dailyWage);
-		    }
+		    }}
 		}
