@@ -16,11 +16,11 @@ public class WelcomeMessage {
 
 		        switch (employeeCheck) {
 		        case 1:
-		            dailyWage = day*fullDayHour * wagePerHour;
+		            dailyWage = dailyWage+fullDayHour * wagePerHour;
 		            System.out.println("Employee is present Full Time");
 		            break;
 		        case 2:
-		        	 dailyWage = day*partTimeHour * wagePerHour;
+		        	 dailyWage = dailyWage+partTimeHour * wagePerHour;
 		             System.out.println("Employee is present half time");
 		             break;
 default:		            System.out.println("Employee is absent");
