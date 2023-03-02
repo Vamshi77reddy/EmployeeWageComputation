@@ -3,11 +3,10 @@ package com.bridgeLabz;
 public class WelcomeMessage {
 	
 		public static void Attendance() {
-		int emp = 1;
 
 		int empCheck = (int) ( (Math.random() * 10 )% 2);
 
-		if (empCheck == emp) {
+		if (empCheck == 1) {
 
 			System.out.println("Employee is present");
 
@@ -21,6 +20,6 @@ public class WelcomeMessage {
 }
 
 public static void main(String[] args) {
-	System.out.println("Welcome to Employeewage Computation");
+	System.out.println("Welcome to EmployeewageComputation");
 	Attendance();
 }}
