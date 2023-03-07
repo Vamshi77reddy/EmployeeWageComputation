@@ -2,10 +2,14 @@ package com.bridgeLabz;
 
 public class WelcomeMessage {
 	
-			public static void main(String[] args) {
+static final int FullTIme=1;
+static final int PartTime=2;
+static final int WAGEPerHour=20;
+static final int WorkingDaysPerMonth=20;
+static final int TotalWorkingHours=100;
 
-		        System.out.println("Welcome to Employee Wage Computation Program");
-		        int wagePerHour = 20;
+ static void calculateWage() {
+int wagePerHour = 20;
 		        int fullDayHour = 8;
 		        int dailyWage = 0;
 		        int partTimeHour = 4;
@@ -34,4 +38,7 @@ default:		            System.out.println("Employee is absent");
 		    }
 		        System.out.println("Employee total wage is: " + dailyWage);
 }
+public static void main(String[] args) {
+	calculateWage();
 		}
+}
