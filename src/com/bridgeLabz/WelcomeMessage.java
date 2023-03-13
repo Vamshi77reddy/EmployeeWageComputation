@@ -32,12 +32,19 @@ default:		            System.out.println("Employee is absent");
 		        }
 		        System.out.println("Working days is : " + totalWorkingDays   +   " Hours: "  +totalHour);
 		    }
-		        System.out.println("Employee total wage is: " + dailyWage  + " of +" +company );
+		        System.out.println("Employee total wage is: " + dailyWage  + " of " +company );
 }
 public static void main(String[] args) {
-	calculateWage("Tata",20,22, 100);
-	calculateWage("Mahindra",21,21,90);
-	calculateWage("Amazon",22,20, 85);
+	WelcomeMessage e =new WelcomeMessage();
+
+	WelcomeMessage e1  = new WelcomeMessage();
+	WelcomeMessage e2 = new WelcomeMessage();
+    
+	e.calculateWage("Tata",20,22, 100);
+	e1.calculateWage("Mahindra",21,21,90);
+	e2.calculateWage("Amazon",22,20, 85);
+
+	   
 
 		}
 }
